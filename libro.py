@@ -1,13 +1,14 @@
 class Libro:
     def __init__(self, titulo, autor, genero, paginas, anio_publicacion,
-    disponible=True):
+disponible=True):
         self.titulo = titulo
         self.autor = autor
         self.genero = genero # 'novela', 'ciencia', 'historia'
         self.paginas = paginas
         self.anio_publicacion = anio_publicacion
         self.disponible = disponible
-        def calcular_popularidad(self):
+        
+    def calcular_popularidad(self):
         if self.genero == 'novela':
             base = 50
             extra = self.paginas / 10
